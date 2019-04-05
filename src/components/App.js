@@ -1,6 +1,7 @@
 import React from 'react';
 import Header from './Header';
 import NoticiasContainer from './NoticiasContainer';
+import Sidenav from "./Sidenav";
 
 class App extends React.Component {
 
@@ -24,6 +25,7 @@ class App extends React.Component {
         return(
             <div className="ui container">
                 <Header/>
+                <Sidenav/>
                 <NoticiasContainer noticias = {this.state.noticias}/>
             </div>
         );
